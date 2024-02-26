@@ -55,7 +55,6 @@ class TV():
     def setControl(self, control):
         self._control = control
 
-        
     
     @classmethod
     def setNumTv(cls, numTV):
@@ -78,13 +77,18 @@ class TV():
 
 
     def canalUp(self):
-        self._canal += 1
+        if(self._estado and self._canal >=1 and self._canal <= 120):
+            self._canal += 1
 
     def canalDown(self):
-        self._canal -= 1
+        if(self._estado and self._canal >=1 and self._canal <= 120):
+            self._canal -= 1
 
 
     def volumenUp(self):
-        self._volumen += 1
+        if(self._estado and self._volumen >= 0 and self._volumen <= 7):
+            self._volumen += 1
+            
     def volumenDown(self):
-        self._volumen -= 1
+        if(self._estado and self._volumen >= 0 and self._volumen <= 7):
+            self._volumen -= 1

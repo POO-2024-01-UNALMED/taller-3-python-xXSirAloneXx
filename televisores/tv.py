@@ -14,6 +14,7 @@ class TV():
         self._volumen = 1
         self._precio = 500
         self._canal = 1
+        self._control = None
 
         TV._numTV += 1
 

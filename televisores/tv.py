@@ -15,7 +15,7 @@ class TV():
         self._precio = 500
         self._canal = 1
 
-        self._numTV += 1
+        TV._numTV += 1
 
     
 

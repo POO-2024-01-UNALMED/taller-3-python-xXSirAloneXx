@@ -40,7 +40,7 @@ class Control():
             self._tv.setCanal(canal)
     
     def setVolumen(self, volumen):
-        if self._tv:
+        if self._tv and self._tv.getEstado():
             self._tv.setVolumen(volumen)
 
 
@@ -48,5 +48,5 @@ class Control():
     def getTv(self):
         return self._tv
     
-    def setTv(self, tv):
-        self._tv = tv
+    def setTv(self, tele):
+        self._tv = tele
